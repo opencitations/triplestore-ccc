@@ -6,7 +6,7 @@ if [ -z "$myv" ] || [[ $myv != *"results"* ]];
 then
     ./stop.sh
     cd ..
-    java -server -Xmx1g -Dbigdata.propertyFile=occ.properties -Djetty.port=3002 -Djetty.host=127.0.0.1 -jar blazegraph.jar &
+    java -server -Xmx1g -Dbigdata.propertyFile=ccc.properties -Djetty.port=3002 -Djetty.host=127.0.0.1 -jar blazegraph.jar &
     cd $CUR_DIR
     exit 0
 fi
